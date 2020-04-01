@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name'viewport' contet="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <title>Sign-up Form</title>
+</head>
+
+<body>
+    <header>
+        <h1>THE CODE REVIEW</h1>
+    </header>
+
+    <section class="form-details">
+
+    <form action="index.html" method="POST"
+        <h2>Signup for our newsletter</h2>
+        <p class="details">Get the latest news on how your code is doing right in your inbox</p>
+    
+
+    <div class="form">
+        <fieldset class="contact-information">
+            <legend class="form-header">Contact Information</legend>
+
+            <label class="main-label" for="user_name">Full Name</label>
+            <input required class='main-input' type="text" id="user_name" placeholder="required"><br>
+
+            <label class="main-label" for="email">Email Address</label>
+            <input required class="main-label" type="email" id="email" name="email" placeholder="required"><br>
+
+            <label class="main-label" for="phone">Phone Number</label>
+            <input class='main-input' type="text" id="phone" name="phone" placeholder="1-(234)-567-8910"><br>
+
+            <label class="main-label" for="address">Address</label>
+            <input class='main-input' type="text" id="address" name="address" placeholder="123 Seasame St."><br>
+
+            <label class="main-label" for="city">City</label>
+                    <input class='main-input' type="text" id="city" name="city" placeholder="San Francisco"><br>
+
+            <label for="state" class="main-label">State</label>
+            <select class='main-input' name="state" id="state" >
+                    <option value="CA">CA</option>
+                    <option value="NV">NV</option>
+                    <option value="NY">NY</option>
+                    <option value="CO">CO</option>
+                    <option value="LV">LV</option>
+                    <option value="UT">UT</option>
+            </select><br>
+
+            <label for="zip" class="main-label">Zip Code</label>
+            <input class='main-input' type="text" id="zip" name="zip" placeholder="22335">
+
+        </fieldset>
+    </div>
+
+    <div class="form">
+        <fieldset class="newsletter">
+            <legend class="form-header">Newsletter</legend>
+                <label class="main-label">Select the newsletter you would like to receive</label>
+
+                <input type="checkbox" id="html_news" name="html_news" value="html_news">
+                <label for="html_news">HTML News</label>
+
+                <input type="checkbox" id="css_news" name="css_news" value="css_news">
+                <label for="html_css">HTML CSS</label>
+
+                <input type="checkbox" id="javascript_news" name="javascript_news" value="javascript_news">
+                <label for="javascript_news">Javascript News</label>
+            
+                <label class="news-format">Newsletter format</label> 
+
+                <input type="radio" name="news_format" id="html" value="html">
+                <label for="html">HTML</label>
+
+                <input type="radio" name="news_format" id="plain_text" value="html">
+                <label for="html">Plain text</label>
+
+                <label for="topics" class="main-label">Other topics you'd like to hear about</label>
+                <textarea class='main-input' name="topic" id="topic" row="4" placeholder="I would like to hear more about..."></textarea>
+
+        </fieldset>
+
+        <button type="submit">Sign Up</button>
+        <p class="copyright-text">&copy;Copyright The Code Review</p>
+
+    </div>
+
+    </form>
+
+</body>
+</html>
