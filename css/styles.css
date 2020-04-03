@@ -1,13 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;1,300&display=swap');
 
-/*-----Base Styles-------*/
+/*-----Base and Layout Styles-------*/
 
 * {
     box-sizing: border-box;
 }
 
 body {
-    font-family: 'Noto Sans, sans-serif';
+    font-family: "Merriweather", serif;
     text-align: center;
 }
 
@@ -17,7 +17,172 @@ form {
     padding-bottom: 25px;
     max-width: 100%;
     background-color: #ffffff;
-    text-align: center;
+    text-align: left;
     border-radius: 0 0 10px 10px;
+    border-top: 2px solid black;
 }
 
+label {
+    display: inline-block;
+}
+
+fieldset {
+    border: none;
+}
+
+button {
+    display: block;
+    margin: auto;
+    width: 90%;
+    background-color: rgb(10, 204, 204);
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 800;
+    border-radius: 5px;
+    height: 60px;
+}
+
+.main-header {
+    background: #000000;
+    color: white;
+    margin-top: 0;
+    padding: 10px 0 10px 0;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+p,
+label {
+    color: #000;
+    font-weight: 100;
+    font-size: 1em;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.heading {
+    max-width: 100%;
+    padding: 0 35px 25px 35px;
+    margin: auto;
+    margin-bottom: 3px;
+    text-align: center;
+}
+
+.footer {
+    text-align: center;
+    margin: 20px auto 140px;
+    font-style: italic;
+    font-size: .8em;
+}
+
+/*------ Inputs ------*/
+
+input[type="text"],
+input[type="email"],
+input[type="phone"],
+textarea,
+select {
+    background: rgb(243, 237, 237);
+    height: 50px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 0 10px 0 10px;
+}
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="phone"]::placeholder {
+    text-align: right;
+    opacity: .4;
+}
+
+.contact-information {
+    display: flex;
+    border-bottom: 2px solid #000;
+    margin-bottom: 20px;
+}
+
+legend {
+    color: #000;
+    font-size: 1.2em;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.details,
+select {
+    color: rgb(194, 181, 181);
+}
+
+textarea {
+    height: 100px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    height: 15px;
+    width: 15px;
+}
+
+
+.newsletter {
+    line-height: 2;
+}
+
+.newsl {
+    padding-left: 10px;
+}
+
+input[id="zip"] {
+    display: block;
+    width: 40%;
+}
+
+/*-------Media Quaries-------*/
+
+@media (min-width:768px) {
+
+    form {
+        margin: auto;
+        margin-top: 3px;
+        width: 60%;
+        max-width: 600px;
+    }
+
+    .flex-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .con {
+        width: 40%;
+        align-self: center;
+    }
+
+    .con input,
+    .con select {
+        margin-bottom: 0;
+    }
+
+    .main-header {
+        margin: auto;
+        width: 100%;
+    }
+
+    .con {
+        display: flex;
+        background-color: white;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .heading {
+        width: 50%;
+        max-width: 600px;
+        margin: auto;
+    }
+}
