@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-    <link rel="normalize" href="css/normalize.css">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
     <title>Sign-up Form</title>
 </head>
@@ -22,10 +22,10 @@
 
     <form action="index.html" method="POST">
 
-        <fieldset class="contact-information">
+        <fieldset class="information">
             <legend class="form-header">Contact Information</legend>  
 
-    <div class="flex-wrapper"></div>
+    <div class="flex-wrapper">
 
         <div class="con">
             <label class="contact" for="user_name">Full Name</label>
@@ -107,13 +107,14 @@
                 <option value="WV">West Virginia</option>
                 <option value="WI">Wisconsin</option>
                 <option value="WY">Wyoming</option>
-            </select><br>
+            </select>
         </div>
 
         <div class="con">
             <label for="zip-code" class="contact">Zip Code</label>
             <input type="text" id="zip-code" name="zip-code" placeholder="94505">
         </div>
+    </div>
     </fieldset>
 
         <fieldset class="newsletter">
@@ -135,7 +136,7 @@
                 <label class="newsl" for="html">HTML</label><br> 
 
                 <input type="radio" name="news_format" id="plain_text" value="html">
-                <label class="newsl" for="plain_html">Plain text</label><br> 
+                <label class="newsl" for="plain_text">Plain text</label><br> 
 
                 <label for="topic">Other topics you'd like to hear about</label>
                 <textarea name="topic" id="topic" placeholder="I would like to hear more about..."></textarea>
