@@ -103,7 +103,7 @@ input[type="tel"]::placeholder {
 
 input[id="zip-code"] {
     display: block;
-    width: 35%;
+    width: 30%;
 }
 
 .information {
@@ -156,50 +156,56 @@ textarea{
     transition: background-color 2s ease-out;
 }
 
+.information .flex-pair {
+    display: flex;
+    flex-direction: column;
+}
+
+.information .contact {
+    margin-bottom: 10px;
+}
+
 /*-------Media Quaries-------*/
 
 @media (min-width:768px) {
 
-    form {
-        margin: auto;
-        margin-top: 3px;
-        width: 50%;
-        max-width: 500px;
+    .information .flex-pair {
+        flex-direction: row;
     }
 
-    .flex-wrapper{
+    form {
+        width: 50%;
+        max-width: 500px;
+        margin: auto;
+        margin-top: 3px;
+     }
+    
+     .flex-wrapper{
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
         align-items: center;
      }
 
-    .contact {
-        width: 30%;
-        align-self: center;
-    }
-
-    .con input,
-    .con select {
-        margin-bottom: 0;
-    }
-
-    .main-header {
-        margin: auto;
-        width: 100%;
-    }
-
-    .con {
+     .flex-pair {
         display: flex;
-        background-color: white;
+        background-color: #ffffff;
         width: 100%;
-        margin-bottom: 20px;
-    }
+        margin-bottom: 15px;
+     }
+     .flex-pair input,
+     .flex-pair select {
+         margin-bottom: 0;
+     }
 
-    .heading {
-        width: 50%;
-        max-width: 600px;
+     .contact {
+         width: 30%;
+         align-self: center;
+     }
+    
+     .main-header {
+        width: 100%;
         margin: auto;
-    }
+     }
 
 }
