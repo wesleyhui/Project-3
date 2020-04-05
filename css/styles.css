@@ -79,23 +79,30 @@ label {
 
 input[type="text"],
 input[type="email"],
-input[type="phone"],
+input[type="tel"],
 textarea,
 select {
     background: rgb(243, 237, 237);
-    height: 50px;
-    width: 100%;
+    height: 40px;
+    width: 70%;
     border: none;
     border-radius: 5px;
-    margin-bottom: 20px;
-    padding: 0 10px 0 10px;
+    margin-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: right;
 }
 
 input[type="text"]::placeholder,
 input[type="email"]::placeholder,
-input[type="phone"]::placeholder {
+input[type="tel"]::placeholder {
     text-align: right;
     opacity: .4;
+}
+
+input[id="zip-code"] {
+    display: block;
+    width: 35%;
 }
 
 .contact-information {
@@ -118,6 +125,7 @@ select {
 
 textarea {
     height: 100px;
+    width: 100%;
 }
 
 input[type="radio"],
@@ -135,9 +143,16 @@ input[type="checkbox"] {
     padding-left: 10px;
 }
 
-input[id="zip"] {
-    display: block;
-    width: 40%;
+input:focus,
+textarea:focus {
+    border: 5px solid #000;
+    transition: background-color 1s ease-in;
+    background-color: #4fd1c6;
+}
+
+input,
+textarea{
+    transition: background-color 2s ease-out;
 }
 
 /*-------Media Quaries-------*/
@@ -158,7 +173,7 @@ input[id="zip"] {
         flex-direction: column;
     }
 
-    .con {
+    .contact {
         width: 40%;
         align-self: center;
     }
@@ -185,4 +200,5 @@ input[id="zip"] {
         max-width: 600px;
         margin: auto;
     }
+
 }

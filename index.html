@@ -28,33 +28,34 @@
     <div class="flex-wrapper"></div>
 
         <div class="con">
-            <label class="main-label" for="user_name">Full Name</label>
-            <input required class='main-input' type="text" id="user_name" placeholder="required"><br>
+            <label class="contact" for="user_name">Full Name</label>
+            <input required type="text" id="user_name" name="user_name" placeholder="required"><br>
         </div>
 
         <div class="con">
-            <label class="main-label" for="email">Email Address</label>
-            <input required class="main-label" type="email" id="email" name="email" placeholder="required"><br>
+            <label class="contact" for="email">Email Address</label>
+            <input required type="email" id="email" name="email" placeholder="required"><br>
         </div>
 
         <div class="con">
-            <label class="main-label" for="phone">Phone Number</label>
-            <input class='main-input' type="text" id="phone" name="phone" placeholder="1-(234)-567-8910"><br>
+            <label class="contact" for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="1-(234)-567-8910"><br>
         </div>
 
         <div class="con">
-            <label class="main-label" for="address">Address</label>
-            <input class='main-input' type="text" id="address" name="address" placeholder="123 Seasame St."><br>
+            <label class="contact" for="address">Address</label>
+            <input type="text" id="address" name="address" placeholder="123 Seasame St."><br>
         </div>
 
         <div class="con">
-            <label class="main-label" for="city">City</label>
-            <input class='main-input' type="text" id="city" name="city" placeholder="San Francisco"><br>
+            <label class="contact" for="city">City</label>
+            <input type="text" id="city" name="city" placeholder="San Francisco"><br>
         </div>
 
         <div class="con">
-            <label for="state" class="main-label">State</label>
-            <select class='main-input' name="state" id="state" >
+            <label for="state" class="contact">State</label>
+            <select class="arrows" name="state" id="state">
+                <option value="" selected="selected" disabled hidden>Choose State</option>
                 <option value="AL">Alabama</option>
                 <option value="AK">Alaska</option>
                 <option value="AZ">Arizona</option>
@@ -110,8 +111,8 @@
         </div>
 
         <div class="con">
-            <label for="zip" class="main-label">Zip Code</label>
-            <input class='main-input' type="text" id="zip" name="zip" placeholder="22335">
+            <label for="zip-code" class="contact">Zip Code</label>
+            <input type="text" id="zip-code" name="zip-code" placeholder="94505">
         </div>
     </fieldset>
 
@@ -134,10 +135,10 @@
                 <label class="newsl" for="html">HTML</label><br> 
 
                 <input type="radio" name="news_format" id="plain_text" value="html">
-                <label class="newsl" for="html">Plain text</label><br> 
+                <label class="newsl" for="plain_html">Plain text</label><br> 
 
-                <label class="newsl" for="topic">Other topics you'd like to hear about</label><br>
-                <textarea class="main-input" name="topic" id="topic" placeholder="I would like to hear more about..."></textarea>
+                <label for="topic">Other topics you'd like to hear about</label>
+                <textarea name="topic" id="topic" placeholder="I would like to hear more about..."></textarea>
 
         </fieldset>
 
